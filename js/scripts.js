@@ -1,19 +1,3 @@
-alert ('Hello World');
-
-let favoriteFood = 'Pizza';
-favoriteFood = 'Capricciosa';
-document.write(favoriteFood);
-
-// let myName = 'Bob';
-// document.write(myName);
-// myName = 'John Doe';
-// document.write(myName);
-
-// let simpleAddition = 2 + 2;
-// document.write(simpleAddition);
-
-// let size = 100;
-// let doubleSize = size * 2;
-// let minSize = (doubleSize * 2) - (size / 2);
-// document.write(minSize);
+let pokemonList=[{name:"Charmander", type:"Fire", height:"0.6"},{name:"Machop", type:"fighting", height:"0.8"},{ name:"Gengar", type:["ghost","poison"], height:"1.5"}]
+console.log(pokemonList);
 
