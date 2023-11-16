@@ -23,7 +23,6 @@ let pokemonRepository = (function () {
         
         // add 
         pokemonRepository.add({ name: "Pikachu", type: "Electric", height:"0.4" });
-        
         // display
         pokemonRepository.getAll().forEach(function(pokemon){
         console.log(pokemon);
