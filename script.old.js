@@ -20,3 +20,5 @@ let pokemonList=[
         console.log(ithem);
       
       });
+
+   
