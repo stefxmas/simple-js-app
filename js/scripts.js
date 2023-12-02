@@ -33,14 +33,24 @@ let pokemonRepository = (function () {
   modalContainer.classList.add('is-visible');
   }
   
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+      hideModal();
+    }
+  });
+
+  //document.querySelector('#show-modal').addEventListener('click', () => {
+   //   showModal('Modal title', 'This is the pokedex content!');
+   // });
+   
   function hideModal() {
     modalContainer.classList.remove('is-visible');
 
-window.addEventListner('keydown', (e) => {
-      if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
-        hideModal();
-      }
-    });
+// window.addEventListener('keydown', (e) => {
+//       if (e.key === 'Escape' && modalContainer.classList.contains('is-visible')) {
+//         hideModal();
+//       }
+//     });
 
     //document.querySelector('#show-modal').addEventListener('click', () => {
    //   showModal('Modal title', 'This is the pokedex content!');
