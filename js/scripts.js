@@ -39,10 +39,6 @@ let pokemonRepository = (function () {
     }
   });
 
-  //document.querySelector('#show-modal').addEventListener('click', () => {
-   //   showModal('Modal title', 'This is the pokedex content!');
-   // });
-   
   function hideModal() {
     modalContainer.classList.remove('is-visible');
 
