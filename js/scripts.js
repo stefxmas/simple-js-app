@@ -10,7 +10,7 @@ function showModal(pokemon) {
 
   let modalBody = $(".modal-body");
   let modalTitle = $(".modal-title");
-  let modalHeader = $(".modal-header");
+  //let modalHeader = $(".modal-header");
   modalTitle.empty();
   modalBody.empty();
   let titleElement = document.createElement("h1");
