@@ -52,7 +52,10 @@ function showModal(pokemon) {
     });
     listItem.appendChild(button);
     pokemonList.appendChild(listItem);
+    
   }
+  
+
 
   function loadList() {
     return fetch(apiUrl).then(function (response) {
@@ -115,3 +118,4 @@ pokemonRepository.getAll().forEach(function(pokemon){
   pokemonRepository.addListItem(pokemon);
 });
 });
+

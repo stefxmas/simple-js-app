@@ -143,3 +143,31 @@ function showDetails(item){
       showModal(item);
   });
 }
+
+//search button 
+searchButton.addEventListener('click', function() {
+  // get the search input value
+  const searchTerm = searchInput.value;
+  // do something with the search term (e.g. redirect to a search results page)
+  console.log(`Searching for "${searchTerm}"...`);
+});
+
+<span role="button">
+              <i class="fa fa-search" aria-hidden="true"></i>
+          </span>
+
+let form = document.querySelector(".form-inline")
+, input = document.createElement("input");
+function searchFunction() {
+  let t, e, n, o, i;
+  for (n = 0,
+  t = input.value.toUpperCase(),
+  e = document.getElementsByClassName("list-group-item"); n < e.length; n++)
+      (o = (i = e[n].getElementsByClassName("button-class")[0]).innerText).toUpperCase().indexOf(t) > -1 ? e[n].style.display = "" : e[n].style.display = "none"
+}
+input.classList.add("form-control"),
+input.setAttribute("type", "text"),
+input.setAttribute("placeholder", "Search"),
+input.setAttribute("aria-label", "Search"),
+form.appendChild(input),
+input.addEventListener("keyup", searchFunction);
